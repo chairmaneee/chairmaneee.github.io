@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kindergarten Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff5ed;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #83B8C6;
+            font-size: 100px; /* Change this value to adjust the size */
+            font-weight: bolder;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        h2 {
+            font-size: 50px; /* You can adjust this size to your preference */
+            color: #000000;  /* Optional: Color for the h2 text */
+            font-weight: bold; /* Optional: Emphasis */
+        }
+
+        .game-container {
+            margin-top: 30px;
+        }
+        .game {
+            border: 2px solid #ccc;
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #EECEDA;
+            border-radius: 10px;
+        }
+        button {
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: #ff8566;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            background-color: #ff6f61;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        a:hover {
+            background-color: #ff8566;
+        }
+
+        /* Optional: Styling for the image */
+        .team-image {
+            width: 300px;  /* Set width as desired */
+            height: auto;   /* Maintain aspect ratio */
+            margin-top: 20px; /* Space above the image */
+        }
+
+        /* Add margin-top to position the button properly below the image */
+        .team-button {
+            margin-top: 20px; /* Adjust this value for more or less space */
+        }
+    </style>
+    
+</head>
+<body>
+    <h1>Welcome, Kindergarten Learners!</h1>
+    <img src="C:\Users\Charmaine\Downloads\Chairmane Project\images\children.png" alt="Welcome Image" class="team-image"/> <!-- Image below h1 -->
+
+    <!-- Meet Our Team button positioned under the image -->
+    <a href="team.html" class="team-button">Meet Our team</a>
+    
+    <div class="game-container">
+        <!-- Game 1: Matching Game -->
+        <div class="game" id="matching-game">
+            <h1>Game 1: Shape Matching</h1>
+            <h2>Match the shape with its correct name!</h2>
+            <div id="shape-display"></div>
+            <div id="shape-options"></div>
+            <button onclick="startMatchingGame()">Start Game</button>
+        </div>
+
+        <!-- Game 2: Counting Game -->
+        <div class="game" id="counting-game">
+            <h1>Game 2: Counting Stars</h1>
+            <h2>How many stars do you see?</h2>
+            <div id="counting-display"></div>
+            <div id="counting-options"></div>
+            <button onclick="startCountingGame()">Start Game</button>
+        </div>
+    </div>
+
+    <script src="games.js"></script>
+</body>
+</html>
